@@ -1,0 +1,175 @@
+/* Phần chính của blog */
+.blog {
+    padding: 80px 0;
+}
+
+/* Bài post */
+.blog__post {
+    margin: 0 0 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của blog */
+.blog__title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Ảnh của bài post */
+.blog__img-wrap {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.blog__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+/* Ngày đăng bài */
+.blog__post-date {
+    margin-bottom: 15px;
+    color: #6c757d;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+/* Mô tả bài post */
+.blog__post-desc {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Nút thao tác cho bài post */
+.blog__action {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blog__action:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+/* Danh sách nhóm các liên kết bên sidebar */
+.list-group {
+    margin-bottom: 30px;
+}
+
+.list-group-link {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list-group-link:hover {
+    color: black;
+    text-shadow: 1px 0px 1px currentColor;
+}
+
+/* Các liên kết mạng xã hội */
+.blog__social {
+    display: flex;
+    gap: 10px;
+}
+
+.blog__social a {
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.blog__social a:hover {
+    color: black;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.comment {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#previews img {
+    max-width: 150px; /* Giới hạn chiều rộng ảnh */
+    max-height: 150px; /* Giới hạn chiều cao ảnh */
+    margin: 5px; /* Khoảng cách giữa các ảnh */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* Căn chỉnh và kiểu cho nút like */
+.btn-like {
+    background-color: #008CBA;  /* Màu xanh cho nút khi chưa like */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* Hiệu ứng hover khi người dùng di chuột vào nút */
+.btn-like:hover {
+    background-color: #0e7a90;  /* Tối màu hơn khi hover */
+    transform: scale(1.05);  /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Kiểu cho nút khi đã like (nếu user đã like bài viết) */
+.btn-like.liked {
+    background-color: #f44336;  /* Màu đỏ khi đã like */
+}
+
+/* Hiệu ứng hover khi bài viết đã like */
+.btn-like.liked:hover {
+    background-color: #d32f2f;  /* Màu đỏ đậm hơn khi hover */
+    transform: scale(1.1);  /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Kiểu cho icon bên trong nút nếu bạn muốn thêm icon */
+.btn-like i {
+    margin-right: 8px;  /* Cách giữa icon và chữ */
+}
+
+/* Kiểu cho số lượng like */
+.like-count {
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
